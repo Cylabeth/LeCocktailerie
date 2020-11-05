@@ -1,0 +1,411 @@
+.navbar {
+  width: 100%;
+}
+.background {
+  margin-top: 0;
+  background-image: url("https://res.cloudinary.com/cocktailerie/image/upload/v1600978759/cocktails/background_final_x6xfff.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000; }
+
+.background-2 {
+  margin-top: 0;
+  background-image: url("https://res.cloudinary.com/cocktailerie/image/upload/v1601010768/cocktails/loginback_y2sdiu.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000; }
+
+.index-logo {
+  margin-top: 250px; }
+
+.index-button {
+ padding: 100px;
+  color: white;
+  font-weight: 500px;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  width: 100px;
+  background-color: rgba(211, 18, 18, 0.974); }
+
+.section-details {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+
+h1 {
+  font-size: 4em;
+  font-weight: 500;
+  margin: 30px;
+  font-family: 'Raleway', sans-serif; }
+
+h2 {
+  font-size: 1.7em; }
+
+h3 {
+  display: block;
+  height: 2rem;
+  overflow: hidden; }
+
+.recipes-card {
+padding: 0;
+  width: 18rem;
+  border-radius: 10px;
+   margin-bottom: 50px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2)); }
+
+.btn-recipe {
+  text-align: center;
+  display: block;
+  position: inherit;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #d71f0c;
+  color: white;
+  font-weight: 500; }
+
+.btn-details {
+  text-align: center;
+  display: block;
+  position: inherit;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #211dd7;
+  color: white;
+  font-weight: 500; }
+
+.btn-recipe a,
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+.btn-edit {
+  text-align: center;
+  display: block;
+  position: inherit;
+  background-color: #1c7709;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight: 500; }
+
+.body-recipe {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px; }
+
+.cocktail-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 20px;
+  align-content: center;
+  margin-top: 60px; }
+
+.img-recipe {
+  border-radius: 10px 10px 0px 0px; }
+
+.index-title {
+  margin-top: 60px; }
+
+input:invalid {
+  border-bottom: 2px solid red; }
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen); }
+
+input:valid {
+  border: 2px solid black; }
+
+.image {
+  height: 50px;
+  width: 80px; }
+
+.image-search {
+  height: 200px;
+  border-radius: 10px; }
+
+#centered {
+  position: relative;
+  width: 400px;
+  height: 400px; }
+
+.image-random {
+  position: absolute;
+  width: 300px;
+  margin-top: 50px;
+  border-radius: 20px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+  margin-left: 20px; }
+
+.image-details {
+  margin-left: 20px;
+  width: 250px; }
+
+.btn-danger {
+  background-color: #770400;
+  margin-top: 40%;
+  height: 45px; }
+
+.btn-search-ad {
+  background-color: black;
+  color: white; }
+
+.button-admin {
+  padding-left: 30px; }
+
+.divider-line {
+  background-color: grey;
+  height: 1px; }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.main-text {
+  position: absolute;
+  top: 50px;
+  width: 96.66666666666666%;
+  color: #FFF; }
+
+.btn-min-block {
+  min-width: 170px;
+  line-height: 26px; }
+
+.btn-clear {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  margin-right: 15px; }
+
+.btn-clear:hover {
+  color: #000;
+  background-color: #FFF; }
+
+input:required:invalid,
+input:focus:invalid {
+  background-image: url(/images/invalid.png);
+  background-position: right top;
+  background-repeat: no-repeat; }
+
+input:required:valid {
+  background-image: url(/images/valid.png);
+  background-position: right top;
+  background-repeat: no-repeat; }
+
+.search-view {
+  color: black; }
+
+/* SIGN UP STYLE*/
+.sign-font {
+  font-family: 'Numans', sans-serif; }
+
+.container-sign {
+  height: 100%;
+  align-content: center; }
+
+.card-sign {
+  height: 340px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 10px; }
+
+.card-header-sign {
+  color: white;
+  padding: 20px 0px 0px 20px; }
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #d71f0c;
+  color: white;
+  border: 0 !important; }
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important; }
+
+.remember {
+  color: white; }
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px; }
+
+.login_btn {
+  color: white;
+  background-color: #d71f0c;
+  width: 100px;
+  border-radius: 10px; }
+
+.links {
+  color: white; }
+
+.links a {
+  margin-left: 4px; }
+
+.logo-sign-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start; }
+
+.logo-style {
+  width: 25em;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
+  margin-top: 50px; }
+
+.position-logo {
+  margin-top: 100px; }
+
+.card-container {
+  margin: 25px auto 0;
+  position: relative;
+  width: 900px; }
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 0 5px rgba(75, 75, 75, 0.07);
+  z-index: 1; }
+
+.col-sm-12.col-md-12.col-lg-3{
+    text-align: center;
+    align-self: center;
+}
+.card-number {
+  margin-top: 15px; }
+
+.card-circle {
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 22px;
+  font-size: 12px;
+  height: 25px;
+  text-align: center;
+  width: 25px; }
+
+.card-author {
+  display: block;
+  font-size: 12px;
+  letter-spacing: .5px;
+  margin: 15px 0 0;
+  text-transform: uppercase; }
+
+.card-description {
+  display: inline-block;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 10px 0; }
+
+.card-read {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin: 5px 0 20px;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase; }
+
+.card-read:after {
+  background-color: #b8bddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 9px;
+  width: 75%; }
+
+.card-tag {
+  float: right;
+  margin: 5px 0 0; }
+
+.card-media {
+  float: right; }
+
+.card-shadow {
+  background-color: #fff;
+  box-shadow: 0 2px 25px 2px black, 0 2px 50px 2px black, 0 0 100px 3px rgba(0, 0, 0, 0.25);
+  height: 1px;
+  margin: -1px auto 0;
+  width: 80%;
+  z-index: -1; }
+
+.img-recipe {
+  border-radius: 10px 10px 0px 0px; }
+
+.body-recipe {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px; }
+
+.btn-recipe a,
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+.btn-recipe {
+  text-align: center;
+  display: block;
+  position: inherit;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #D71F0C;
+  color: white;
+  font-weight: 500; }
+
+.recipes-card {
+  width: 18rem;
+  padding:0;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2)); }
+
+.row{
+  justify-content: center;
+}
+.col-sm-12.col-lg-8.col-md-8.button-index {
+    text-align: center;
+
+}
+
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body.background {
+    background-image: url("https://res.cloudinary.com/cocktailerie/image/upload/v1600978759/cocktails/background_final_x6xfff.jpg");
+    background-position: 7%; }
+    .col-sm-12.col-lg-8.col-md-8.button-index {
+      margin-top: 250px;
+    }
+  .index-logo {
+    max-width: 100%;
+    margin-top: 100px; } 
+}
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+<section style="background-color: white; padding-top: 50px; padding-bottom: 50px;">
+    <div class="container">
+        <h1>Editing a cocktail</h1>
+
+        <form action="/cocktails/profile/edit-cocktail?id={{cocktail.id}}" enctype="multipart/form-data" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="strDrink">Name</label>
+                    <input type="text" class="form-control" name="strDrink" value="{{cocktail.strDrink}}" required
+                        placeholder="Name of your cocktail!">
+                </div>
+                <div class="form-group col-md-6">
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="strInstructions">Instructions</label>
+                <input type="text" class="form-control" name="strInstructions" value="{{cocktail.strInstructions}}"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="strIngredients">Ingredients</label>
+                <input type="text" class="form-control" id="strIngredients" value="{{cocktail.strIngredients}}"
+                    required>
+                <small>Ingredient's structure example: 1/2 apple, 30cl orange juice, etc... </small>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="strAlcoholic">Alcohol </label>
+                    <select name="strAlcoholic" class="form-control">
+                        <option>{{cocktail.strAlcoholic}}</option>
+                        {{#each value}}
+                        {{#each alcohol}}
+                        <option value="{{[]}}">{{[]}}</option>
+                        {{/each}}
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="strGlass">Glass </label>
+                    <select name="strGlass" class="form-control">
+                        <option>{{cocktail.strGlass}}</option>
+                        {{#each value}}
+                        {{#each glass}}
+                        <option value="{{[]}}">{{[]}}</option>
+                        {{/each}}
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="strCategorry">Category </label>
+                    <select name="strCategory" class="form-control">
+                        <option>{{cocktail.strCategory}}</option>
+                        {{#each value}}
+                        {{#each category}}
+                        <option value="{{[]}}">{{[]}}</option>
+                        {{/each}}
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <p>Actual Image:</p>
+                <p><img src="{{cocktail.strDrinkThumb}}" height="90px"></p>
+                <input type="text" name="imageName" placeholder="name of the image" value="{{imageName}}"><br><br>
+                <input type="file" name="imageInput" class="form-control-file" value="{{cocktail.strDrinkThumb}}">
+            </div>
+            <div class="form-group"></div>
+            <label for="strTags">Tags</label>
+            <input name="strTags" type="text" class="form-control" value="{{cocktail.strTags}}" required>
+            <p></p>
+            <button type="submit" class="btn btn-dark d-flex">Modify cocktail</button>
+
+
+    </div>
+
+    </form>
+    </div>
+</section>

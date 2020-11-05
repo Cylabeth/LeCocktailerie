@@ -1,0 +1,28 @@
+<div class="card-container container">
+    <div class="card">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <span class="card-author subtle">Created by: {{cocktailDetails.strOwner.username}}</span>
+                <h2 class="card-title">{{cocktailDetails.strDrink}}</h2>
+                <span class="card-description subtle" style="margin">{{cocktailDetails.strInstructions}}</span>
+                <div class="card-read"></div>
+                <h4>Ingredients:</h4>
+                {{#each cocktailDetails.strIngredients}}
+                <ul>
+                    <li>{{[]}}</li>
+                </ul>
+                {{/each}}
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <img class="image-details" src="{{cocktailDetails.strDrinkThumb}}" alt="" class="card-media" />
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="card-shadow"></div>
+</div>
+</section>

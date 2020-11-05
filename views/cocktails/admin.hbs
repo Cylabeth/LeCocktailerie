@@ -1,0 +1,360 @@
+<div id="wrapper">
+  ​
+  <!-- Sidebar -->
+  <ul class="navbar-nav bg-dark sidebar sidebar-dark accordion" id="accordionSidebar">
+    ​
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin">
+      <div class="sidebar-brand-icon">
+        <i class="fas fa-glass-martini"></i>
+        ​
+      </div>
+      <div class="sidebar-brand-text mx-1">Hello {{userAdmin.username}}</div>
+    </a>
+    ​
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+    ​
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    ​
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Interface
+    </div>
+    ​
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+        aria-controls="collapseTwo">
+        <i class="fas fa-user"></i>
+        <span>Users</span>
+      </a>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar"
+        style="z-index: 9999;">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Custom Components:</h6>
+          <a class="collapse-item" href="#create-user">Create new user</a>
+          <a class="collapse-item" href="#edit-user">See active users</a>
+        </div>
+      </div>
+    </li>
+    ​
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+        aria-expanded="true" aria-controls="collapseUtilities">
+        <i class="fas fa-fw fa-wrench"></i>
+        <span>Edition</span>
+      </a>
+      <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar"
+        style="z-index: 9999" ;>
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Edition Utilities:</h6>
+          <a class="collapse-item" href="#edit-user">Edit user</a>
+          <a class="collapse-item" href="utilities-border.html">Edit cocktail</a>
+          <a class="collapse-item" href="utilities-animation.html">Edit glasses</a>
+          <a class="collapse-item" href="utilities-other.html">Edit bottles</a>
+        </div>
+      </div>
+    </li>
+    ​
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    ​
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Login/Logout
+    </div>
+    ​
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+        aria-controls="collapsePages">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Pages</span>
+      </a>
+      <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar"
+        style="z-index: 9999;">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Login Screens:</h6>
+          <a class="collapse-item" href="/login">Login</a>
+          <a class="collapse-item" href="/signup">Register</a>
+          <a class="collapse-item" href="/Logout">Logout</a>
+          ​
+        </div>
+      </div>
+    </li>
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+  </ul>
+  <!-- End of Sidebar -->
+  ​
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+    ​
+    <!-- Main Content -->
+    <div id="content">
+      ​
+      <!-- Topbar -->
+      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        ​
+        <!-- Topbar Search -->
+        <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+          <div class="input-group">
+            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+              aria-label="Search" aria-describedby="basic-addon2" id="search">
+            <div class="input-group-append">
+              <button class="btn btn-primary" onclick="search(document.getElementById('search').value)">
+                <i class="fas fa-search fa-sm"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        ​
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+          ​
+          <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+          <li class="nav-item dropdown no-arrow d-sm-none">
+            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+              aria-labelledby="searchDropdown">
+              <form class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                    aria-label="Search" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-search fa-sm"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+          </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of Topbar -->
+      ​
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+        ​
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        </div>
+        ​
+        <!-- Content Row -->
+        <div class="row">
+          ​
+          <!-- Joke! 
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Drunk chat</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">50000</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-comments fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+-->
+          <!-- Content Row -->
+          ​
+          <div class="row">
+            ​
+            <!-- List cocktails -->
+            <div class="col-xl-8 col-lg-7" style="">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Recipes</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body" style="padding-right: 0px; padding-left: 0px;">
+                  ​
+                  <div style="height: 500px; overflow-y:scroll">
+                    ​
+                    ​
+                    {{#each cocktail}}
+                    <div class="col-8">
+                      <span class="small font-weight-bold"><img src="{{strDrinkThumb}}" height="70px"
+                          style="margin-right: 15px;">{{strDrink}}</span>
+                    </div>
+                    <div class="col-2" style="float: right; margin-top: -55px; margin-right: 5px;">
+                      <form action="/cocktails/admin/recipedel/{{_id}}" method="post">
+                        <input type="image"
+                          src="https://res.cloudinary.com/cocktailerie/image/upload/v1600903080/cocktails/delete2_button_umpt7a.png"
+                          alt="Submit Form">
+                      </form>
+                    </div>
+                    <div class="col-2" style="float: right; margin-top: -55px; margin-right: 55px;">
+                      <a href="/cocktails/profile/edit-cocktail/{{id}}"><input type="image"
+                          src="https://res.cloudinary.com/cocktailerie/image/upload/v1600903080/cocktails/delete_button_qagvrs.png"
+                          alt="Submit">
+                      </a>
+                    </div>
+                    <hr>
+                    {{/each}}
+                  </div>
+                  ​
+                </div>
+              </div>
+            </div>
+            ​
+            ​
+            <!-- List of Users -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Users</h6>
+                  <div class="dropdown no-arrow">
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                      aria-labelledby="dropdownMenuLink">
+                      <div class="dropdown-divider"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body" style="height: 538px; overflow-y:scroll; padding-left:5px">
+                  {{#each users}}
+                  <div class="row" style="padding: 5px">
+                    <div class="col-8">
+                      <h4 class="small font-weight-bold">{{username}}</h4>
+                    </div
+                      style="display: flex; flex-direction: row; justify-content:space-between;  align-items: baseline; align-content: center;">
+                    <div class="col-2" style="">
+                      <input type="image"
+                        src="https://res.cloudinary.com/cocktailerie/image/upload/v1600903080/cocktails/delete_button_qagvrs.png"
+                        alt="Edit Form" class="">
+                    </div>
+                    <div class="col-2" style="">
+                      <form action="/cocktails/admin/userdel/{{_id}}" method="post">
+                        <input type="image"
+                          src="https://res.cloudinary.com/cocktailerie/image/upload/v1600903080/cocktails/delete2_button_umpt7a.png"
+                          alt="Submit Form">
+                      </form>
+                    </div>
+                  </div>
+                  <hr class="sidebar-divider">
+                  {{/each}}
+                  <div class="mt-4 text-center small">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          ​
+          <!-- Content Row -->
+          <div class="row">
+            ​
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+              ​
+              <!-- Project Card Example -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary" id="create-user"><i class="fas fa-user"></i> Create user
+                  </h6>
+                </div>
+                <div class="card-body">
+                  <form action="/cocktails/admin" method="POST">
+                    <div class="form-group">
+                      <h4 class="small font-weight-bold">Username</h4>
+                      <div>
+                        <input name="username" type="text" class="form-control" id="field1">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <h4 class="small font-weight-bold">Password</h4>
+                      <input name="password" type="password" class="form-control" id="field2">
+                    </div>
+                    <div class="form-group">
+                      <h4 class="small font-weight-bold">Role</h4>
+                      <h4 class="small font-weight-bold"><input type="radio" name="role" value="Admin"> Admin</h4>
+                      <h4 class="small font-weight-bold"><input type="radio" name="role" value="Suscriptor"> Suscriptor
+                      </h4>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block btn-lg">Register</button>
+                </div>
+                <form>
+              </div>
+              ​
+              <!-- Color System -->
+              <div class="row">
+                <div class="col-lg-6 mb-4"></div>
+                <div class="col-lg-6 mb-4"></div>
+              </div>
+              ​
+            </div>
+            ​
+            <div class="col-lg-6 mb-4">
+              ​
+              <!-- ACTIVE USERS -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary" id="#active-users">
+                    <i class="fas fa-cocktail" id="#edit-user"></i> Edit user</h6>
+                </div>
+                <div class="card-body">
+                  <div>
+                    <form action="/cocktails/admin" method="POST">
+                      <div class="form-group">
+                        <h4 class="small font-weight-bold">Username</h4>
+                        <div>
+                          <input name="username" type="text" class="form-control" id="field1">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <h4 class="small font-weight-bold">Password</h4>
+                        <input name="password" type="password" class="form-control" id="field2">
+                      </div>
+                      <div class="form-group">
+                        <h4 class="small font-weight-bold">Role</h4>
+                        <h4 class="small font-weight-bold"><input type="radio" name="role" value="Admin"> Admin</h4>
+                        <h4 class="small font-weight-bold"><input type="radio" name="role" value="Suscriptor">
+                          Suscriptor
+                        </h4>
+                      </div>
+                      <button type="submit" class="btn btn-dark btn-block btn-lg">Edit</button>
+                  </div>
+                  <form>
+                </div>
+              </div>
+            </div>
+            ​
+            <!-- Approach -->
+
+          </div>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- End of Main Content -->
+  </div>
+  <!-- End of Content Wrapper -->
+</div>
+<!-- End of Page Wrapper -->
+​
+<script>
+  function search(string) {
+    window.find(string);
+  }
+
+</script>

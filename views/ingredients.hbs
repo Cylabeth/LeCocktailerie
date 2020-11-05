@@ -1,0 +1,24 @@
+<section style="background-color:white;">
+    <div class="container" style="background-color:white;padding-bottom: 50px;padding-top:50px; ">
+
+        <div style="padding-bottom: 30px;">
+            {{#each allBottles}}
+            <input id="{{name}}" height="157px" type="image" src="{{image}}" alt="{{name}}" />
+            {{/each}}
+        </div>
+        <div class="row">
+
+
+            <div class="col-sm-12 col-md-6 col-lg-12" style="margin-bottom: 30px;">
+                <div class="cocktail-ingredients"
+                    style="margin-top: 20px; display: flex;flex-wrap: wrap; justify-content: flex-end;margin-right:40px; ">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-12 ">
+                <div class="cocktail-recipe"></div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

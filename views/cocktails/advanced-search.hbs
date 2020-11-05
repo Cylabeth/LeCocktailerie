@@ -1,0 +1,93 @@
+<section style="background-color:white; padding-top: 30px; padding-bottom:180px;">
+    <div class="container">
+        <div class="row text-center pb-4">
+            <div class="col-md-12">
+                <h1>Advanced search</h1>
+            </div>
+        </div>
+        <form action="/cocktails/list" method="get">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card acik-renk-form">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group ">
+                                        <select name="strAlcoholic" class="form-control">
+                                            <option>Alcohol</option>
+                                            {{#each values}}
+                                            {{#each alcohol}}
+                                            <option value="{{[]}}">{{[]}}</option>
+                                            {{/each}}
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group ">
+                                        <select name="strCategory" class="form-control">
+                                            <option>Category</option>
+                                            {{#each values}}
+                                            {{#each category}}
+                                            <option value="{{[]}}">{{[]}}</option>
+                                            {{/each}}
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group ">
+                                        <select name="strGlass" class="form-control">
+                                            <option>Glass</option>
+                                            {{#each values}}
+                                            {{#each glass}}
+                                            <option value="{{[]}}">{{[]}}</option>
+                                            {{/each}}
+                                            {{/each}}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group ">
+                                        <select name="strDrink" class="form-control">
+                                            <option>Name</option>
+                                            {{#each cocktails}}
+                                            <option>{{strDrink}}</option>
+                                            {{/each}}
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <select name="strDrink" class="form-control">
+                                                <option>Tag</option>
+                                                {{#each cocktails}}
+                                                {{#each strTags}}
+                                                <option value="{{[]}}">{{[]}}</option>
+                                                {{/each}}
+                                                {{/each}}
+                                            </select>
+                                            {{!-- <div class="form-group">
+                                            <input name="strTags" type="text" class="form-control" id="name-input"
+                                                placeholder="tags">
+                                        </div> --}}
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group ">
+                                            <button type="submit"
+                                                class="btn btn-search-ad d-flex justify-content-center form-control">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+    </div>
+</section>

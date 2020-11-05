@@ -1,0 +1,32 @@
+<section style="background-color: white; padding-top: 40px;">
+    <div class="container">
+        <h1 class="text-center">Welcome, {{userData.username}}!</h1>
+        <p class="text-center"> Your role is {{userData.role}}</p>
+
+        <a class="d-flex justify-content-center btn btn-dark" href="/cocktails/profile/new-cocktail">New
+            recipe</a>
+        <div class="cocktail-list-container">
+            <div class="cocktail-db">
+                <div class="row">
+                    {{#each cocktails}}
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="card recipes-card">
+                            <form action="/cocktails/profile/{{_id}}/delete" method="post">
+                                <input type="image"
+                                    src="https://res.cloudinary.com/cocktailerie/image/upload/v1600903080/cocktails/delete2_button_umpt7a.png"
+                                    alt="Submit Form" style="position:inherit">
+                            </form>
+                            <img class="card-img-top" src="{{strDrinkThumb}}" alt="{{strDrink}}">
+                            <div class="card-body body-recipe">
+                                <h3 class="card-title text-center">{{strDrink}}</h3>
+                                <a class="btn-edit" href="/cocktails/profile/edit-cocktail/{{id}}">Edit cocktail</a><br>
+                                <a href="/cocktails/{{id}}" class="btn-details">Grab the recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

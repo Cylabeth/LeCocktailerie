@@ -1,0 +1,60 @@
+<div style="background-color: white; padding-top:10px;" class="container">
+  <h1 class="text-center search-view">Cocktails</h1>
+  <hr>
+  <div class="cocktail-list-container">
+    <div class="cocktail-db">
+      <div class="row list-recipes">
+        {{#each cocktails}}
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="card recipes-card">
+            <img class="card-img-top img-recipe" src="{{strDrinkThumb}}" alt="{{strDrink}}">
+            <div class="card-body body-recipe">
+              <h3 class="card-title text-center">{{strDrink}}</h3>
+              <p class="card-text text-center">{{strCategory}}</p>
+              <a href="/cocktails/{{id}}" class="btn-recipe">Grab the recipe</a>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <div style="background-color: white; padding-top:10px;" class="container">
+  <h1 class="text-center search-view">Cocktails</h1>
+  <hr>
+  <div class="cocktail-list-container">
+    <div class="cocktail-db">
+      <div class="row">
+        {{#each cocktails}}
+        <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class="card recipes-card">
+            <img class="card-img-top img-recipe" src="{{strDrinkThumb}}" alt="{{strDrink}}">
+            <div class="card-body body-recipe">
+              <h3 class="card-title text-center">{{strDrink}}</h3>
+              <p class="card-text text-center">{{strCategory}}</p>
+              <a href="/cocktails/{{id}}" class="btn-recipe">Grab the recipe</a>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div> --}}
