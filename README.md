@@ -3,6 +3,18 @@
 A Cocktails Web using the CocktailDB API
 
  https://le-cocktailerie.herokuapp.com
+ 
+CAPTURES:
+
+![CAPTURE TWO](http://cylabeth.com/ironhack/img/2B.jpg) 
+![CAPTURE THREE](http://cylabeth.com/ironhack/img/3.jpg)
+![CAPTURE FOUR](http://cylabeth.com/ironhack/img/4.jpg)
+![CAPTURE FIVE](http://cylabeth.com/ironhack/img/5.jpg) 
+![CAPTURE ONE](http://cylabeth.com/ironhack/img/1.jpg)
+
+
+ 
+ 
 
 ENDPOINTS TABLE
 
