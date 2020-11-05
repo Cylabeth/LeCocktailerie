@@ -4,7 +4,7 @@ A Cocktails Web using the CocktailDB API
 
  https://le-cocktailerie.herokuapp.com
  
-CAPTURES:
+SCREENS:
 
 ![CAPTURE TWO](http://cylabeth.com/ironhack/img/2B.jpg) 
 ![CAPTURE THREE](http://cylabeth.com/ironhack/img/3.jpg)
